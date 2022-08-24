@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>baiduwanpan</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            background-color: white;
+        }
+
+        /* *{
+            border: 1px solid black;
+        }*/
+        .flex {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .column {
+            flex-direction: column;
+        }
+
+        .white {
+            background-color: white;
+        }
+
+        .flex1 {
+            flex: 1;
+        }
+
+        .yinying-d {
+            box-shadow: 1px 4px 4px rgba(249, 249, 249);
+        }
+
+        .yinying-r {
+            box-shadow: 4px 1px 4px rgba(249, 249, 249);
+        }
+
+        .font18 {
+            align-items: center;
+            font-size: 18px;
+        }
+
+        .font16 {
+            align-items: center;
+            font-size: 16px;
+        }
+
+        .mg8 {
+            margin: 16px;
+        }
+
+        .mg8r {
+            margin-right: 16px;
+        }
+
+        .mg8b {
+            margin-bottom: 16px;
+        }
+
+        .mg24b {
+            margin-bottom: 24px;
+        }
+
+        .center {
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body class="flex column">
+    <!--标题栏-->
+    <div style="height: 60px;border-bottom:1px solid #eee;z-index: 3;" class="white yinying-d flex">
+        <!--图标-->
+        <div class="flex" style="border-bottom: 1px solid #eee;">
+            <img src="https://n.sinaimg.cn/sinakd2021220s/121/w600h321/20210220/339f-kkmphpr6486796.png" alt="狗头"
+                width="120px" height="59px">
+        </div>
+        <!--网站名称-->
+        <div class=" flex font18">
+            李某人的网盘
+        </div>
+        <div class="flex1" style="display:flex;justify-content:flex-end">
+            <div class="center flex mg8r">
+                下载要限速，会员往死里整
+            </div>
+            <div class="center flex mg8r">
+                收费客户端下载
+            </div>
+            <div class="center flex mg8r">
+                开通超级会员
+            </div>
+            <div class="center flex">
+                你的账户
+            </div>
+        </div>
+    </div>
+    <!--主页栏-->
+    <div class="flex1 flex ">
+        <!--侧边栏-->
+        <div style="width: 80px;border-right:1px solid #eee;z-index: 2;" class="white yinying-r flex column">
+            <!--上-->
+            <div>
+                <div class="flex center" style="font-size: 30px;margin-bottom: 20px;">
+                    首页
+                </div>
+                <div class="flex center" style="font-size: 30px;margin-bottom: 20px;">
+                    收发
+                </div>
+                <div class="flex center" style="font-size: 30px;margin-bottom: 20px;">
+                    消息
+                </div>
+                <div class="flex center" style="font-size: 30px;">
+                    点赞
+                </div>
+            </div>
+            <!--下-->
+            <div class="flex flex1 column " style="justify-content: flex-end;font-size: 30px;">
+                <div style="margin-bottom: 20px;">
+                    工具
+                </div>
+                <div style="margin-bottom: 20px;">
+                    人脉
+                </div>
+                <div>
+                    赞助
+                </div>
+            </div>
+        </div>
+        <!--内容区-->
+        <div class="flex1 flex">
+            <!--总览-->
+            <div class="flex column" style="width:200px; border-right:1px solid #eee;z-index: 1;">
+                <div class="flex center" style="font-size:20px">
+                    我的文档
+                </div>
+            </div>
+            <!--右区-->
+            <div class="flex column flex1">
+                <!--文档处理-->
+                <div style="height:60px; z-index: 1;border-bottom: 1px solid #eee;" class="flex">
+                    <div class="flex font18 mg8r">新建文件夹</div>
+                    <div class="flex font18 mg8r">新建在线文档</div>
+                    <div class="flex font18 mg8r">下载离线文件</div>
+                    <div class="flex font18 mg8r">简易下载助手</div>
+                    <div class="flex font18 mg8r">上传</div>
+                </div>
+                <!--文件区-->
+                <div class="flex flex1">
+                    <!--文件-->
+                    <div class="flex column" style="flex: 1;border-right:1px solid #eee;height: 820px;">
+                        <!--提示栏-->
+                        <div class="flex mg8b font10" style="height: 20px; z-index: 1;margin-right: 18px;">
+                            <div style="flex: 3; padding-left: 60px;">文件名</div>
+                            <div style="flex: 1;">日期</div>
+                            <div style="flex: 1;">大小</div>
+                        </div>
+                        <!--文件的储存区-->
+                        <div class="flex1 flex column" style="overflow:auto;">
+                            <div class="flex mg24b font16 " style="height:16px">
+                                <p style="flex: 3; padding-left: 60px;">实例-文件名</p>
+                                <p style="flex: 1;">2022-8-21</p>
+                                <p style="flex: 1;">1GB</p>
+                            </div>
+                            <div class="flex mg24b font16 " style="height:16px">
+                                <p style="flex: 3; padding-left: 60px;">实例-文件名</p>
+                                <p style="flex: 1;">2022-8-21</p>
+                                <p style="flex: 1;">1GB</p>
+                            </div>
+                            <div class="flex mg24b font16 " style="height:16px">
+                                <p style="flex: 3; padding-left: 60px;">实例-文件名</p>
+                                <p style="flex: 1;">2022-8-21</p>
+                                <p style="flex: 1;">1GB</p>
+                            </div>
+                            <div class="flex mg24b font16 " style="height:16px">
+                                <p style="flex: 3; padding-left: 60px;">实例-文件名</p>
+                                <p style="flex: 1;">2022-8-21</p>
+                                <p style="flex: 1;">1GB</p>
+                            </div>
+                            <div class="flex mg24b font16 " style="height:16px">
+                                <p style="flex: 3; padding-left: 60px;">实例-文件名</p>
+                                <p style="flex: 1;">2022-8-21</p>
+                                <p style="flex: 1;">1GB</p>
+                            </div>
+                            <div class="flex mg24b font16 " style="height:16px">
+                                <p style="flex: 3; padding-left: 60px;">实例-文件名</p>
+                                <p style="flex: 1;">2022-8-21</p>
+                                <p style="flex: 1;">1GB</p>
+                            </div>
+                            <div class="flex mg24b font16 " style="height:16px">
+                                <p style="flex: 3; padding-left: 60px;">实例-文件名</p>
+                                <p style="flex: 1;">2022-8-21</p>
+                                <p style="flex: 1;">1GB</p>
+                            </div>
+                            <div class="flex mg24b font16 " style="height:16px">
+                                <p style="flex: 3; padding-left: 60px;">实例-文件名</p>
+                                <p style="flex: 1;">2022-8-21</p>
+                                <p style="flex: 1;">1GB</p>
+                            </div>
+                            <div class="flex mg24b font16 " style="height:16px">
+                                <p style="flex: 3; padding-left: 60px;">实例-文件名</p>
+                                <p style="flex: 1;">2022-8-21</p>
+                                <p style="flex: 1;">1GB</p>
+                            </div>
+                            <div class="flex mg24b font16 " style="height:16px">
+                                <p style="flex: 3; padding-left: 60px;">实例-文件名</p>
+                                <p style="flex: 1;">2022-8-21</p>
+                                <p style="flex: 1;">1GB</p>
+                            </div>
+                            <div class="flex mg24b font16 " style="height:16px">
+                                <p style="flex: 3; padding-left: 60px;">实例-文件名</p>
+                                <p style="flex: 1;">2022-8-21</p>
+                                <p style="flex: 1;">1GB</p>
+                            </div>
+                            <div class="flex mg24b font16 " style="height:16px">
+                                <p style="flex: 3; padding-left: 60px;">实例-文件名</p>
+                                <p style="flex: 1;">2022-8-21</p>
+                                <p style="flex: 1;">1GB</p>
+                            </div>
+                            <div class="flex mg24b font16 " style="height:16px">
+                                <p style="flex: 3; padding-left: 60px;">实例-文件名</p>
+                                <p style="flex: 1;">2022-8-21</p>
+                                <p style="flex: 1;">1GB</p>
+                            </div>
+                            <div class="flex mg24b font16 " style="height:16px">
+                                <p style="flex: 3; padding-left: 60px;">实例-文件名</p>
+                                <p style="flex: 1;">2022-8-21</p>
+                                <p style="flex: 1;">1GB</p>
+                            </div>
+                            <div class="flex mg24b font16 " style="height:16px">
+                                <p style="flex: 3; padding-left: 60px;">实例-文件名</p>
+                                <p style="flex: 1;">2022-8-21</p>
+                                <p style="flex: 1;">1GB</p>
+                            </div>
+                            <div class="flex mg24b font16 " style="height:16px">
+                                <p style="flex: 3; padding-left: 60px;">实例-文件名</p>
+                                <p style="flex: 1;">2022-8-21</p>
+                                <p style="flex: 1;">1GB</p>
+                            </div>
+                            <div class="flex mg24b font16 " style="height:16px">
+                                <p style="flex: 3; padding-left: 60px;">实例-文件名</p>
+                                <p style="flex: 1;">2022-8-21</p>
+                                <p style="flex: 1;">1GB</p>
+                            </div>
+                            <div class="flex mg24b font16 " style="height:16px">
+                                <p style="flex: 3; padding-left: 60px;">实例-文件名</p>
+                                <p style="flex: 1;">2022-8-21</p>
+                                <p style="flex: 1;">1GB</p>
+                            </div>
+                            <div class="flex mg24b font16 " style="height:16px">
+                                <p style="flex: 3; padding-left: 60px;">实例-文件名</p>
+                                <p style="flex: 1;">2022-8-21</p>
+                                <p style="flex: 1;">1GB</p>
+                            </div>
+                            <div class="flex mg24b font16 " style="height:16px">
+                                <p style="flex: 3; padding-left: 60px;">实例-文件名</p>
+                                <p style="flex: 1;">2022-8-21</p>
+                                <p style="flex: 1;">1GB</p>
+                            </div>
+                            <div class="flex mg24b font16 " style="height:16px">
+                                <p style="flex: 3; padding-left: 60px;">实例-文件名</p>
+                                <p style="flex: 1;">2022-8-21</p>
+                                <p style="flex: 1;">1GB</p>
+                            </div>
+                            <div class="flex mg24b font16 " style="height:16px">
+                                <p style="flex: 3; padding-left: 60px;">实例-文件名</p>
+                                <p style="flex: 1;">2022-8-21</p>
+                                <p style="flex: 1;">1GB</p>
+                            </div>
+                            <div class="flex mg24b font16 " style="height:16px">
+                                <p style="flex: 3; padding-left: 60px;">实例-文件名</p>
+                                <p style="flex: 1;">2022-8-21</p>
+                                <p style="flex: 1;">1GB</p>
+                            </div>
+                            <div class="flex mg24b font16 " style="height:16px">
+                                <p style="flex: 3; padding-left: 60px;">实例-文件名</p>
+                                <p style="flex: 1;">2022-8-21</p>
+                                <p style="flex: 1;">1GB</p>
+                            </div>
+                            <div class="flex mg24b font16 " style="height:16px">
+                                <p style="flex: 3; padding-left: 60px;">实例-文件名</p>
+                                <p style="flex: 1;">2022-8-21</p>
+                                <p style="flex: 1;">1GB</p>
+                            </div>
+                            <div class="flex mg24b font16 " style="height:16px">
+                                <p style="flex: 3; padding-left: 60px;">实例-文件名</p>
+                                <p style="flex: 1;">2022-8-21</p>
+                                <p style="flex: 1;">1GB</p>
+                            </div>
+                            <div class="flex mg24b font16 " style="height:16px">
+                                <p style="flex: 3; padding-left: 60px;">实例-文件名</p>
+                                <p style="flex: 1;">2022-8-21</p>
+                                <p style="flex: 1;">1GB</p>
+                            </div>
+                            <div class="flex mg24b font16 " style="height:16px">
+                                <p style="flex: 3; padding-left: 60px;">实例-文件名</p>
+                                <p style="flex: 1;">2022-8-21</p>
+                                <p style="flex: 1;">1GB</p>
+                            </div>
+                            <div class="flex mg24b font16 " style="height:16px">
+                                <p style="flex: 3; padding-left: 60px;">实例-文件名</p>
+                                <p style="flex: 1;">2022-8-21</p>
+                                <p style="flex: 1;">1GB</p>
+                            </div>
+                            <div class="flex mg24b font16 " style="height:16px">
+                                <p style="flex: 3; padding-left: 60px;">实例-文件名</p>
+                                <p style="flex: 1;">2022-8-21</p>
+                                <p style="flex: 1;">1GB</p>
+                            </div>
+                            <div class="flex mg24b font16 " style="height:16px">
+                                <p style="flex: 3; padding-left: 60px;">实例-文件名</p>
+                                <p style="flex: 1;">2022-8-21</p>
+                                <p style="flex: 1;">1GB</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--消息区-->
+                    <div class="flex column" style="width: 280px;z-index: 1;">
+                        <div class="flex center" style="font-size:20px">
+                            文档详情
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
